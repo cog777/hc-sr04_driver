@@ -37,6 +37,7 @@ Create a device file in /dev
   sudo mknod -m 666 /dev/us_service c 240 0
 
 Example in C:
+```C
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -70,8 +71,10 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+```
 
 Example in Qt:
+```C++
   #include <QDebug>
   #include <QFile>
   #include <QDataStream>
@@ -90,6 +93,7 @@ Example in Qt:
     deviceFile.close();
     return 0;
   } 
+```
 
 KNOWN ISSUES AND LIMITATIONS
 ============================
